@@ -1,4 +1,5 @@
 import java.util.Random;
+import java.util.Scanner;
 
 class Heads_or_tails {
 
@@ -28,6 +29,12 @@ class Heads_or_tails {
     }
 
     public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Who are you?");
+        System.out.print(">");
+        String user_name = sc.next();
+        System.out.println("Hello, " + user_name + "!");
+
         System.out.println("Tossing a coin...");
         Randomjudge();
     }
