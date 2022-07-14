@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 class Heads_or_tails {
 
-    static void Randomjudge() {
+    static void Randomjudge(String username) {
         int Hcount = 0;
         int Tcount = 0;
         String[] hands = { "Heads", "Tails" };
@@ -21,9 +21,9 @@ class Heads_or_tails {
         System.out.print("Heads: " + Hcount + ", ");
         System.out.println("Tails: " + Tcount);
         if (Hcount > Tcount) {
-            System.out.println("You win!");
+            System.out.println(username + " win!");
         } else {
-            System.out.println("You lost");
+            System.out.println(username + " lost");
         }
 
     }
@@ -36,6 +36,6 @@ class Heads_or_tails {
         System.out.println("Hello, " + user_name + "!");
 
         System.out.println("Tossing a coin...");
-        Randomjudge();
+        Randomjudge(user_name);
     }
 }
