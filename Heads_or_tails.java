@@ -19,6 +19,11 @@ class Heads_or_tails {
         }
         System.out.print("Heads: " + Hcount + ", ");
         System.out.println("Tails: " + Tcount);
+        if (Hcount > Tcount) {
+            System.out.println("You win!");
+        } else {
+            System.out.println("You lost");
+        }
 
     }
 
